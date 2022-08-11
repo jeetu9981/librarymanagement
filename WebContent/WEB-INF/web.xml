@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>library_management</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+  <servlet>
+  	<servlet-name>Signup</servlet-name>
+  	<servlet-class>com.controller.StudentSignup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Signup</servlet-name>
+  	<url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+
+
+ <servlet>
+  	<servlet-name>Signin</servlet-name>
+  	<servlet-class>com.controller.StudentSignin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Signin</servlet-name>
+  	<url-pattern>/signin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AdminSignup</servlet-name>
+  	<servlet-class>com.controller.AdminSignup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminSignup</servlet-name>
+  	<url-pattern>/adminsignup</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>AddBook</servlet-name>
+  	<servlet-class>com.controller.AdminAddBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddBook</servlet-name>
+  	<url-pattern>/addbook</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>DashBoard</servlet-name>
+  	<servlet-class>com.controller.AdminDashboard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DashBoard</servlet-name>
+  	<url-pattern>/dashboard</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Delete</servlet-name>
+  	<servlet-class>com.controller.AdminDeleteBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Delete</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Edit</servlet-name>
+  	<servlet-class>com.controller.AdminEditBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Edit</servlet-name>
+  	<url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DeleteBooks</servlet-name>
+  	<servlet-class>com.controller.AdminAllDeleteBooks</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteBooks</servlet-name>
+  	<url-pattern>/deletebooks</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>RenewBook</servlet-name>
+  	<servlet-class>com.controller.AdminRenewBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RenewBook</servlet-name>
+  	<url-pattern>/renewbook</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BookIssueUser</servlet-name>
+  	<servlet-class>com.controller.AdminBookIssueUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BookIssueUser</servlet-name>
+  	<url-pattern>/bookissueusers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ExpireIsueBook</servlet-name>
+  	<servlet-class>com.controller.AdminExpireIsueBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ExpireIsueBook</servlet-name>
+  	<url-pattern>/expireIssuebook</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>SendMail</servlet-name>
+  	<servlet-class>com.controller.AdminSendMail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SendMail</servlet-name>
+  	<url-pattern>/sendmail</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Logout</servlet-name>
+  	<servlet-class>com.util.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Logout</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+ 
+ 
+ 
+ 
+ <servlet>
+  	<servlet-name>StudentDashBoard</servlet-name>
+  	<servlet-class>com.controller.StudentDashboard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentDashBoard</servlet-name>
+  	<url-pattern>/studentdashboard</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>IssueBook</servlet-name>
+  	<servlet-class>com.controller.StudentIssueBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>IssueBook</servlet-name>
+  	<url-pattern>/issuebook</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StudentExpireIsueBook</servlet-name>
+  	<servlet-class>com.controller.StudentExpireIsueBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentExpireIsueBook</servlet-name>
+  	<url-pattern>/studentexpireIssuebook</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StudentIssueBooks</servlet-name>
+  	<servlet-class>com.controller.StudentIssueBooks</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentIssueBooks</servlet-name>
+  	<url-pattern>/studentissuebooks</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StudentReturnBook</servlet-name>
+  	<servlet-class>com.controller.StudentReturnBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentReturnBook</servlet-name>
+  	<url-pattern>/returnbook</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StudentRenewBook</servlet-name>
+  	<servlet-class>com.controller.StudentRenewBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentRenewBook</servlet-name>
+  	<url-pattern>/studentrenewbook</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>StudentSearchBook</servlet-name>
+  	<servlet-class>com.controller.StudentSearchBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentSearchBook</servlet-name>
+  	<url-pattern>/studentsearchbook</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ViewDetails</servlet-name>
+  	<servlet-class>com.controller.ViewDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ViewDetails</servlet-name>
+  	<url-pattern>/viewdetails</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <filter>
+  	<filter-name>CheckBookIssuedOrNot</filter-name>
+  	<filter-class>com.filter.CheckBookIssuedOrNot</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>CheckBookIssuedOrNot</filter-name>
+  	<url-pattern>/issuebook</url-pattern>
+  </filter-mapping>
+  
+
+ 
+  
+  
+</web-app>
