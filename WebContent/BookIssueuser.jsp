@@ -1,8 +1,8 @@
 <%@include file="AdminNavbar.jsp" %>
 <%@page import="java.util.ArrayList" %>
-<%@page import="com.model.Student" %>
+<%@page import="com.librarymanagement.entity.StudentEntity" %>
 <%
-	ArrayList<Student> students=(ArrayList<Student>)request.getAttribute("students");
+	ArrayList<StudentEntity> students=(ArrayList<StudentEntity>)request.getAttribute("students");
 %>
 
 <%

@@ -1,6 +1,6 @@
 <%@include file="StudentNavbar.jsp" %>
 <%@page import="java.util.ArrayList" %>
-<%@page import="com.model.Book" %>
+<%@page import="com.librarymanagement.entity.BookEntity" %>
 
 <%
 	if(request.getAttribute("succMsg")!=null){
@@ -29,15 +29,15 @@
 <%
 	if(session.getAttribute("Id")!=null){
 %>
-	<div class="container mt-5">
+	<div class="container mt-5 frontpage">
 	<h1 class="text-center mb-4">All Books		</h1>
 		<div class="row mt-5">
 		<%
-				ArrayList<Book> books=(ArrayList<Book>)session.getAttribute("books");
+			ArrayList<BookEntity> books=(ArrayList<BookEntity>)session.getAttribute("books");
 				for(int i=0;i<books.size();i++){
 		%>
 				
-					<div class="col-md-3">
+					<div class="col-md-3 mt-4">
 						<div class="card" style="width: 15rem;">
 						  <img height="300" width="300" src="img\\<%=books.get(i).getImage()%>" class="card-img-top" >
 						  <ul class="list-group list-group-flush">

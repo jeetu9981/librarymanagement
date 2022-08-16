@@ -1,8 +1,8 @@
 <%@include file="AdminNavbar.jsp" %>
 <%@page import="java.util.ArrayList" %>
-<%@page import="com.model.Book" %>
+<%@page import="com.librarymanagement.entity.BookEntity" %>
 <%
-	ArrayList<Book> books=(ArrayList<Book>)session.getAttribute("books");
+	ArrayList<BookEntity> books=(ArrayList<BookEntity>)session.getAttribute("books");
 %>
 
 <%

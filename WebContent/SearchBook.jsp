@@ -1,6 +1,6 @@
-<%@include file="StudentNavbar.jsp" %>
+<%-- <%@include file="StudentNavbar.jsp" %> --%>
 <%@page import="java.util.ArrayList" %>
-<%@page import="com.model.Book" %>
+<%@page import="com.librarymanagement.entity.BookEntity" %>
 
 <div class="container mt-5">
 <%
@@ -8,9 +8,9 @@
 %>
 	
 	<%
-		ArrayList<Book> books=(ArrayList<Book>)session.getAttribute("books");
-		if(books.size()>0){
-	%>
+			ArrayList<BookEntity> books=(ArrayList<BookEntity>)session.getAttribute("books");
+				if(books.size()>0){
+		%>
 			<h1 class="text-center mb-4">Search Books</h1>
 					<div class="row mt-5">
 					<%
