@@ -1,8 +1,8 @@
 <%@include file="AdminNavbar.jsp" %>
 <%@page import="java.util.ArrayList" %>
-<%@page import="com.model.ExpireIssuseBooks" %>
+<%@page import="com.librarymanagement.entity.ExpireIssuseBooksEntity" %>
 <%
-	ArrayList<ExpireIssuseBooks> books=(ArrayList<ExpireIssuseBooks>)request.getAttribute("expires");
+	ArrayList<ExpireIssuseBooksEntity> books=(ArrayList<ExpireIssuseBooksEntity>)request.getAttribute("expires");
 %>
 
 <%

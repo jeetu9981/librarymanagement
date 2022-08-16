@@ -7,6 +7,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+ <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
 </head>
 <body style="background-color:	#F5F5F5">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -17,9 +21,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-       <form class="d-flex" action="studentsearchbook" method="get">
-        <input class="form-control me-2" type="search" placeholder="Search Books" aria-label="Search" name="search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+       <form class="d-flex" >
+        <input class="form-control me-2 search" type="search" placeholder="Search Books" aria-label="Search" name="search">
       </form>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -38,4 +41,34 @@
   </div>
 </nav>
 </body>
+
+<div id="fix"></div>
+<script>
+$(".search").keyup(()=>{
+	let s=$(".search").val();
+	$.ajax({
+		url: 'studentsearchbook?search='+s,  
+		type: 'GET',  
+		  success: function(data) {  
+			  console.log(data)
+			  $(".frontpage").html("");
+			  $("#fix").html(data);
+		  }  
+	});
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>

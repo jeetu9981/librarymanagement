@@ -9,7 +9,7 @@
   
   <servlet>
   	<servlet-name>Signup</servlet-name>
-  	<servlet-class>com.controller.StudentSignup</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.StudentSignup</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>Signup</servlet-name>
@@ -19,7 +19,7 @@
 
  <servlet>
   	<servlet-name>Signin</servlet-name>
-  	<servlet-class>com.controller.StudentSignin</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.StudentSignin</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>Signin</servlet-name>
@@ -28,7 +28,7 @@
   
   <servlet>
   	<servlet-name>AdminSignup</servlet-name>
-  	<servlet-class>com.controller.AdminSignup</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.AdminSignup</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>AdminSignup</servlet-name>
@@ -37,7 +37,7 @@
   
    <servlet>
   	<servlet-name>AddBook</servlet-name>
-  	<servlet-class>com.controller.AdminAddBook</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.AdminAddBook</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>AddBook</servlet-name>
@@ -46,7 +46,7 @@
   
    <servlet>
   	<servlet-name>DashBoard</servlet-name>
-  	<servlet-class>com.controller.AdminDashboard</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.AdminDashboard</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>DashBoard</servlet-name>
@@ -55,7 +55,7 @@
   
   <servlet>
   	<servlet-name>Delete</servlet-name>
-  	<servlet-class>com.controller.AdminDeleteBook</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.AdminDeleteBook</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>Delete</servlet-name>
@@ -64,7 +64,7 @@
   
   <servlet>
   	<servlet-name>Edit</servlet-name>
-  	<servlet-class>com.controller.AdminEditBook</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.AdminEditBook</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>Edit</servlet-name>
@@ -73,7 +73,7 @@
   
   <servlet>
   	<servlet-name>DeleteBooks</servlet-name>
-  	<servlet-class>com.controller.AdminAllDeleteBooks</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.AdminAllDeleteBooks</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>DeleteBooks</servlet-name>
@@ -82,7 +82,7 @@
   
   <servlet>
   	<servlet-name>RenewBook</servlet-name>
-  	<servlet-class>com.controller.AdminRenewBook</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.AdminRenewBook</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>RenewBook</servlet-name>
@@ -91,7 +91,7 @@
   
   <servlet>
   	<servlet-name>BookIssueUser</servlet-name>
-  	<servlet-class>com.controller.AdminBookIssueUser</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.AdminBookIssueUser</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>BookIssueUser</servlet-name>
@@ -100,7 +100,7 @@
   
   <servlet>
   	<servlet-name>ExpireIsueBook</servlet-name>
-  	<servlet-class>com.controller.AdminExpireIsueBook</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.AdminExpireIsueBook</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>ExpireIsueBook</servlet-name>
@@ -109,7 +109,7 @@
   
   <servlet>
   	<servlet-name>SendMail</servlet-name>
-  	<servlet-class>com.controller.AdminSendMail</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.AdminSendMail</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>SendMail</servlet-name>
@@ -118,7 +118,7 @@
   
   <servlet>
   	<servlet-name>Logout</servlet-name>
-  	<servlet-class>com.util.Logout</servlet-class>
+  	<servlet-class>com.librarymanagement.util.Logout</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>Logout</servlet-name>
@@ -131,7 +131,7 @@
  
  <servlet>
   	<servlet-name>StudentDashBoard</servlet-name>
-  	<servlet-class>com.controller.StudentDashboard</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.StudentDashboard</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>StudentDashBoard</servlet-name>
@@ -140,7 +140,7 @@
   
   <servlet>
   	<servlet-name>IssueBook</servlet-name>
-  	<servlet-class>com.controller.StudentIssueBook</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.StudentIssueBook</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>IssueBook</servlet-name>
@@ -149,7 +149,7 @@
   
   <servlet>
   	<servlet-name>StudentExpireIsueBook</servlet-name>
-  	<servlet-class>com.controller.StudentExpireIsueBook</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.StudentExpireIsueBook</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>StudentExpireIsueBook</servlet-name>
@@ -158,7 +158,7 @@
   
   <servlet>
   	<servlet-name>StudentIssueBooks</servlet-name>
-  	<servlet-class>com.controller.StudentIssueBooks</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.StudentIssueBooks</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>StudentIssueBooks</servlet-name>
@@ -167,7 +167,7 @@
   
   <servlet>
   	<servlet-name>StudentReturnBook</servlet-name>
-  	<servlet-class>com.controller.StudentReturnBook</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.StudentReturnBook</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>StudentReturnBook</servlet-name>
@@ -176,7 +176,7 @@
   
   <servlet>
   	<servlet-name>StudentRenewBook</servlet-name>
-  	<servlet-class>com.controller.StudentRenewBook</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.StudentRenewBook</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>StudentRenewBook</servlet-name>
@@ -186,7 +186,7 @@
   
   <servlet>
   	<servlet-name>StudentSearchBook</servlet-name>
-  	<servlet-class>com.controller.StudentSearchBook</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.StudentSearchBook</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>StudentSearchBook</servlet-name>
@@ -195,7 +195,7 @@
   
   <servlet>
   	<servlet-name>ViewDetails</servlet-name>
-  	<servlet-class>com.controller.ViewDetails</servlet-class>
+  	<servlet-class>com.librarymanagement.controller.ViewDetails</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>ViewDetails</servlet-name>
@@ -206,7 +206,7 @@
   
   <filter>
   	<filter-name>CheckBookIssuedOrNot</filter-name>
-  	<filter-class>com.filter.CheckBookIssuedOrNot</filter-class>
+  	<filter-class>com.librarymanagement.filter.CheckBookIssuedOrNot</filter-class>
   </filter>
   <filter-mapping>
   	<filter-name>CheckBookIssuedOrNot</filter-name>

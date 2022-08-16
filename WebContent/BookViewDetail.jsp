@@ -1,8 +1,8 @@
 <%@include file="StudentNavbar.jsp" %>
-<%@page import="com.model.Book" %>
+<%@page import="com.librarymanagement.entity.BookEntity" %>
 
 <%
-	Book book=(Book)request.getAttribute("book");
+	BookEntity book=(BookEntity)request.getAttribute("book");
 %>
 
 <%
