@@ -20,8 +20,13 @@ public class AdminAddBook extends HttpServlet{
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
 		HttpSession session=req.getSession();
 		
+		//Part we use for get image
 		Part p=req.getPart("image");
+		
+		//with part object we get file name
 		String fileName=p.getSubmittedFileName().trim();
+		
+		//we get file path in inputstream and write that file in other path from where it can be accessible by our application
 		InputStream is=p.getInputStream();
 		String path="C:\\Users\\DELL\\Documents\\workspace-sts-3.9.10.RELEASE\\library_management\\WebContent\\img\\"+fileName;
 		int bytes=0;
@@ -30,6 +35,7 @@ public class AdminAddBook extends HttpServlet{
 			fs.write(bytes);
 		fs.close();
 		
+		//here we get all data which comes from view and set into entity
 		BookEntity b=new BookEntity();
 		b.setBookName(req.getParameter("name"));
 		b.setAuthorName(req.getParameter("authorName"));
@@ -40,6 +46,7 @@ public class AdminAddBook extends HttpServlet{
 		b.setImage(fileName);
 		b.setQuantity(Integer.parseInt(req.getParameter("quantity")));
 		
+		//create model object and pass bookentity for save that entity into database
 		BookModel bd=new BookModel();
 		boolean ans=bd.addBook(b);
 		if(ans) {

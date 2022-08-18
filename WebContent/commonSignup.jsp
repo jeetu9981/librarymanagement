@@ -1,5 +1,29 @@
 <%@include file="CommonNavbar.jsp" %>
 
+<%
+	if(request.getAttribute("succMsg")!=null){
+%>
+	<input type="hidden" id="msg" value="<%=request.getAttribute("succMsg")%>">
+	<script type="text/javascript">
+		var m=document.getElementById("msg"); 
+		alert(m.defaultValue)
+	</script>
+<%
+	}
+%>
+
+<%
+	if(request.getAttribute("failMsg")!=null){
+%>
+	<input type="hidden" id="msg" value="<%=request.getAttribute("failMsg")%>">
+	<script type="text/javascript">
+	var m=document.getElementById("msg"); 
+	alert(m.defaultValue)
+	</script>
+<%
+	}
+%>
+
 <div class="container mt-5">
 	<div class="row">
 		<h1 class="text-center">Signup Form</h1>

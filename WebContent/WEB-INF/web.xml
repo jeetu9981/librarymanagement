@@ -213,6 +213,33 @@
   	<url-pattern>/issuebook</url-pattern>
   </filter-mapping>
   
+  <filter>
+  	<filter-name>SignupFilter</filter-name>
+  	<filter-class>com.librarymanagement.filter.SignupFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>SignupFilter</filter-name>
+  	<url-pattern>/signup</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>SigninFilter</filter-name>
+  	<filter-class>com.librarymanagement.filter.SigninFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>SigninFilter</filter-name>
+  	<url-pattern>/signin</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>AdminSignupFilter</filter-name>
+  	<filter-class>com.librarymanagement.filter.AdminSignupFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>AdminSignupFilter</filter-name>
+  	<url-pattern>/adminsignup</url-pattern>
+  </filter-mapping>
+  
 
  
   
